@@ -28,7 +28,7 @@ let package = Package(
             targets: ["Algorithms"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/apple/swift-numerics.git", from: "1.0.0"),
+        .package(url: "https://github.com/b-outlaw-nba/swift-numerics.git", from: "1.2.1"),
     ],
     targets: [
         .target(
