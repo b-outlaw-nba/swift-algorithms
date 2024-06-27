@@ -1,4 +1,4 @@
-// swift-tools-version:5.4
+// swift-tools-version: 5.9
 //===----------------------------------------------------------------------===//
 //
 // This source file is part of the Swift Algorithms open source project
@@ -14,6 +14,14 @@ import PackageDescription
 
 let package = Package(
     name: "swift-algorithms",
+    defaultLocalization: "en",
+    platforms: [
+        .iOS(.v15),
+        .macOS(.v14),
+        .tvOS(.v15),
+        .visionOS(.v1),
+        .watchOS(.v10)
+    ],
     products: [
         .library(
             name: "Algorithms",
